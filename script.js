@@ -6,28 +6,28 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "pergunta deve ser escrita aqui",
+        enunciado: "O que você prefere aprender",
         alternativas: [
             {
-                texto: "alternativa letra A deve ser escrita aqui",
-                afirmacao: "Afirmação gerada se a pessoa escolher a letra A deve estar aqui "
+                texto: "Tecnologia e números",
+                afirmacao: "Você é de exatas"
             },
             {
-                texto: "alternativa letra B deve ser escrita aqui",
-                afirmacao: "Afirmação gerada se a pessoa escolher a letra B deve estar aqui "
+                texto: "Linguagens e emoções",
+                afirmacao: "Você é de humanas"
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "O que te motiva no trabalho",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Resolver problemas complexos",
+                afirmacao: "Pensamento analitico"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Expressar ideias",
+                afirmacao: "Pensamento criativo"
             }
         ]
     },
