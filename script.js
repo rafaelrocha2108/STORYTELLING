@@ -6,70 +6,70 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "pergunta deve ser escrita aqui",
+        enunciado: "Você lida melhor com:",
         alternativas: [
             {
-                texto: "alternativa letra A deve ser escrita aqui",
-                afirmacao: "Afirmação gerada se a pessoa escolher a letra A deve estar aqui "
+                texto: "Fatos",
+                afirmacao: "Prioriza dados verificáveis"
             },
             {
-                texto: "alternativa letra B deve ser escrita aqui",
-                afirmacao: "Afirmação gerada se a pessoa escolher a letra B deve estar aqui "
+                texto: "Intuições",
+                afirmacao: "Confia em percepções internas"
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Ao resolver um problema, você:",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Segue o método",
+                afirmacao: "Prefere soluções estruturadas"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Improvisa",
+                afirmacao: "Adapta conforme a situação"
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Você prefere ambientes:",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Controlados",
+                afirmacao: "Funciona melhor sob regras claras"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Flexíveis",
+                afirmacao: "Trabalha bem em cenários variáveis"
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Ao lidar com falhas, você tende a:",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Corrigir imediatamente",
+                afirmacao: "Busca restauração rápida"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Analisar causas",
+                afirmacao: "Investiga antes de agir"
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Produtividade vem de:",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Disciplina",
+                afirmacao: "Mantém rotina estável"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Estímulo",
+                afirmacao: "Age por motivação externa"
             }
         ]
-    },
+    }
 ];
 
 
