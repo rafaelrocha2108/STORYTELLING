@@ -69,7 +69,82 @@ const perguntas = [
                 afirmacao: "Age por motivação externa"
             }
         ]
-    }
+    },
+    {
+    enunciado: "Tomada de decisão:",
+    alternativas: [
+        {
+            texto: "Baseada em lógica",
+            afirmacao: "Aplica critérios racionais",
+            tags: ["logica"]
+        },
+        {
+            texto: "Baseada em contexto",
+            afirmacao: "Avalia variáveis externas",
+            tags: ["adaptacao"]
+        }
+    ]
+},
+{
+    enunciado: "Interpretação de instruções:",
+    alternativas: [
+        {
+            texto: "Segue exatamente",
+            afirmacao: "Cumpre conforme especificado",
+            tags: ["estrutura"]
+        },
+        {
+            texto: "Adapta se necessário",
+            afirmacao: "Ajusta conforme demanda real",
+            tags: ["adaptacao"]
+        }
+    ]
+},
+{
+    enunciado: "Reação a mudança súbita:",
+    alternativas: [
+        {
+            texto: "Replaneja",
+            afirmacao: "Reconstrói estratégias rapidamente",
+            tags: ["adaptacao"]
+        },
+        {
+            texto: "Minimiza impacto",
+            afirmacao: "Reduz instabilidade do sistema",
+            tags: ["estrutura"]
+        }
+    ]
+},
+{
+    enunciado: "Execução de tarefas repetitivas:",
+    alternativas: [
+        {
+            texto: "Aceita",
+            afirmacao: "Mantém consistência no processo",
+            tags: ["estrutura"]
+        },
+        {
+            texto: "Evita",
+            afirmacao: "Prefere variação e estímulo",
+            tags: ["adaptacao"]
+        }
+    ]
+},
+{
+    enunciado: "Processamento de falha humana:",
+    alternativas: [
+        {
+            texto: "Lógica aplicada",
+            afirmacao: "Interpreta padrões de erro",
+            tags: ["logica"]
+        },
+        {
+            texto: "Contexto considerado",
+            afirmacao: "Avalia fatores situacionais",
+            tags: ["adaptacao"]
+        }
+    ]
+}
 ];
 
 
