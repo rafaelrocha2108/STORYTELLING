@@ -6,70 +6,70 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "O que você prefere aprender:",
+        enunciado: "pergunta deve ser escrita aqui",
         alternativas: [
             {
-                texto: "Tecnologia e números",
-                afirmacao: "desde cedo, você demonstrava interesse por lógica e inovação"
+                texto: "alternativa letra A deve ser escrita aqui",
+                afirmacao: "Afirmação gerada se a pessoa escolher a letra A deve estar aqui "
             },
             {
-                texto: "Linguagens e emoções",
-                afirmacao: "sua sensibilidade e paixão por comunicação sempre foram marcantes"
+                texto: "alternativa letra B deve ser escrita aqui",
+                afirmacao: "Afirmação gerada se a pessoa escolher a letra B deve estar aqui "
             }
         ]
     },
     {
-        enunciado: "O que te motiva no trabalho:",
+        enunciado: "",
         alternativas: [
             {
-                texto: "Resolver problemas complexos",
-                afirmacao: "enfrentar desafios técnicos te impulsionava a crescer"
+                texto: "",
+                afirmacao: ""
             },
             {
-                texto: "Expressar ideias",
-                afirmacao: "você encontrava sentido em transformar pensamentos em criações"
+                texto: "",
+                afirmacao: ""
             }
         ]
     },
     {
-        enunciado: "Qual tarefa te empolga mais:",
+        enunciado: "",
         alternativas: [
             {
-                texto: "Pensar em um sistema",
-                afirmacao: "você adorava planejar estruturas e tornar processos mais eficientes"
+                texto: "",
+                afirmacao: ""
             },
             {
-                texto: "Contar uma história",
-                afirmacao: "sua imaginação transformava o mundo em palavras encantadoras"
+                texto: "",
+                afirmacao: ""
             }
         ]
     },
     {
-        enunciado: "No trabalho, surge um problema, como você o resolveria:",
+        enunciado: "",
         alternativas: [
             {
-                texto: "Analisando e deduzindo",
-                afirmacao: "sua mente lógica sempre encontrava a raiz do problema"
+                texto: "",
+                afirmacao: ""
             },
             {
-                texto: "Pensando soluções criativas",
-                afirmacao: "você surpreendia com ideias fora do comum"
+                texto: "",
+                afirmacao: ""
             }
         ]
     },
     {
-        enunciado: "Como você gostaria de ser lembrado(a):",
+        enunciado: "",
         alternativas: [
             {
-                texto: "Pela capacidade de transformar ideias em soluções",
-                afirmacao: "você deixou um legado de inovação e impacto real"
+                texto: "",
+                afirmacao: ""
             },
             {
-                texto: "Por inspirar pessoas com suas ideias e histórias",
-                afirmacao: "você tocou vidas com sua visão e empatia"
+                texto: "",
+                afirmacao: ""
             }
         ]
-    }
+    },
 ];
 
 
