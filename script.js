@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Fatos",
-                afirmacao: "Prioriza dados verificáveis"
+                afirmacao: "Prioriza dados,"
             },
             {
                 texto: "Intuições",
-                afirmacao: "Confia em percepções internas"
+                afirmacao: "Confia em percepções,"
             }
         ]
     },
