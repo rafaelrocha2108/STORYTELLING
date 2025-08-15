@@ -131,16 +131,16 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Processamento de falha humana:",
+        enunciado: "Não gosta de:",
         alternativas: [
             {
-                texto: "Lógica aplicada",
-                afirmacao: "Interpreta padrões de erro",
+                texto: "Mudanças rápidas",
+                afirmacao: "Prefere previsibilidade",
                 tags: ["logica"]
             },
             {
-                texto: "Contexto considerado",
-                afirmacao: "Avalia fatores situacionais",
+                texto: "Rotina",
+                afirmacao: "Gosta de novidades",
                 tags: ["adaptacao"]
             }
         ]
