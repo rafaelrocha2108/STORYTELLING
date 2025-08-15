@@ -71,32 +71,28 @@ const perguntas = [
         ]
     },
     {
-    enunciado: "Tomada de decisão:",
-    alternativas: [
-        {
-            texto: "Baseada em lógica",
-            afirmacao: "Aplica critérios racionais",
-            tags: ["logica"]
-        },
-        {
-            texto: "Baseada em contexto",
-            afirmacao: "Avalia variáveis externas",
-            tags: ["adaptacao"]
-        }
-    ]
-},
+        enunciado: "Tomada de decisão:",
+        alternativas: [
+            {
+                texto: "Baseada em lógica",
+                afirmacao: "Aplica critérios racionais"
+            },
+            {
+                texto: "Baseada em contexto",
+                afirmacao: "Avalia variáveis externas"
+            }
+        ]
+    },
     {
         enunciado: "Interpretação de instruções:",
         alternativas: [
             {
                 texto: "Segue exatamente",
-                afirmacao: "Cumpre conforme especificado",
-                tags: ["estrutura"]
+                afirmacao: "Cumpre conforme especificado"
             },
             {
                 texto: "Adapta se necessário",
-                afirmacao: "Ajusta conforme demanda real",
-                tags: ["adaptacao"]
+                afirmacao: "Ajusta conforme demanda real"
             }
         ]
     },
@@ -105,13 +101,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Replaneja",
-                afirmacao: "Reconstrói estratégias rapidamente",
-                tags: ["adaptacao"]
+                afirmacao: "Reconstrói estratégias rapidamente"
             },
             {
                 texto: "Minimiza impacto",
-                afirmacao: "Reduz instabilidade do sistema",
-                tags: ["estrutura"]
+                afirmacao: "Reduz instabilidade do sistema"
             }
         ]
     },
@@ -120,13 +114,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Aceita",
-                afirmacao: "Mantém consistência no processo",
-                tags: ["estrutura"]
+                afirmacao: "Mantém consistência no processo"
             },
             {
                 texto: "Evita",
-                afirmacao: "Prefere variação e estímulo",
-                tags: ["adaptacao"]
+                afirmacao: "Prefere variação e estímulo"
             }
         ]
     },
@@ -135,18 +127,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Mudanças rápidas",
-                afirmacao: "Prefere previsibilidade",
-                tags: ["logica"]
+                afirmacao: "Prefere previsibilidade"
             },
             {
                 texto: "Rotina",
-                afirmacao: "Gosta de novidades",
-                tags: ["adaptacao"]
+                afirmacao: "Gosta de novidades"
             }
         ]
     }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -163,8 +152,8 @@ function mostraPergunta() {
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -173,16 +162,25 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
+    const afirmacao = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacao + ". ";
     atual++;
     mostraPergunta();
 }
 
 function mostraResultado() {
     caixaPerguntas.textContent = "Em 2049...";
-    textoResultado.textContent = historiaFinal;
+    textoResultado.textContent = historiaFinal.trim();
     caixaAlternativas.textContent = "";
+
+    const botaoReiniciar = document.createElement("button");
+    botaoReiniciar.textContent = "Reiniciar";
+    botaoReiniciar.addEventListener("click", () => {
+        atual = 0;
+        historiaFinal = "";
+        mostraPergunta();
+    });
+    caixaAlternativas.appendChild(botaoReiniciar);
 }
 
 mostraPergunta();
